@@ -27,7 +27,8 @@
     border-right: 1px solid ;}
 </style>
 
-  <body>
+  <body onload="myFunction()">
+    
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -38,7 +39,7 @@
         <div class="col-2">
           9 AM
         </div>
-        <div class="col-8" ><textarea class="form-control">random text</textarea>
+        <div class="col-8" ><textarea class="form-control" id="9amtext">Insert Plans</textarea>
   </div>
         <div class="col-2" >
         <button type="button" class="btn btn-info 9am"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -51,10 +52,10 @@
         <div class="col-2">
           10 AM
         </div>
-        <div class="col-8" ><textarea class="form-control">random text</textarea>
+        <div class="col-8" ><textarea class="form-control" id="10amtext">Insert Plans</textarea>
         </div>
         <div class="col-2" >
-        <button type="button" class="btn btn-info 9am"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <button type="button" class="btn btn-info 10am"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 6a1 1 0 0 1 2 0v1H7V6zm3 0v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
           </svg></button>
         </div>
@@ -63,10 +64,10 @@
         <div class="col-2">
           11 AM
         </div>
-        <div class="col-8" ><textarea class="form-control">random text</textarea>
+        <div class="col-8" ><textarea class="form-control" id="11amtext">Insert Plans</textarea>
         </div>
         <div class="col-2" >
-        <button type="button" class="btn btn-info 9am"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <button type="button" class="btn btn-info 11am"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 6a1 1 0 0 1 2 0v1H7V6zm3 0v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
           </svg></button>
         </div>
@@ -75,10 +76,10 @@
         <div class="col-2">
           12 PM
         </div>
-        <div class="col-8" ><textarea class="form-control">random text</textarea>
+        <div class="col-8" ><textarea class="form-control" id="12pmtext">Insert Plans</textarea>
         </div>
         <div class="col-2" >
-        <button type="button" class="btn btn-info 9am"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <button type="button" class="btn btn-info 12pm"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 6a1 1 0 0 1 2 0v1H7V6zm3 0v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
           </svg></button>
         </div>
@@ -87,10 +88,10 @@
         <div class="col-2">
           1 PM
         </div>
-        <div class="col-8" ><textarea class="form-control">random text</textarea>
+        <div class="col-8" ><textarea class="form-control" id="1pmtext">Insert Plans</textarea>
         </div>
         <div class="col-2" >
-        <button type="button" class="btn btn-info 9am"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <button type="button" class="btn btn-info 1pm"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 6a1 1 0 0 1 2 0v1H7V6zm3 0v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
           </svg></button>
         </div>
@@ -99,10 +100,10 @@
         <div class="col-2">
           2 PM
         </div>
-        <div class="col-8" ><textarea class="form-control">random text</textarea>
+        <div class="col-8" ><textarea class="form-control" id="2pmtext">Insert Plans</textarea>
         </div>
         <div class="col-2" >
-        <button type="button" class="btn btn-info 9am"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <button type="button" class="btn btn-info 2pm"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 6a1 1 0 0 1 2 0v1H7V6zm3 0v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
           </svg></button>
         </div>
@@ -110,10 +111,10 @@
         <div class="col-2">
           3 PM
         </div>
-        <div class="col-8" ><textarea class="form-control">random text</textarea>
+        <div class="col-8" ><textarea class="form-control" id="3pmtext">Insert Plans</textarea>
         </div>
         <div class="col-2" >
-        <button type="button" class="btn btn-info 9am"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <button type="button" class="btn btn-info 3pm"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 6a1 1 0 0 1 2 0v1H7V6zm3 0v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
           </svg></button>
         </div>
@@ -121,10 +122,10 @@
         <div class="col-2">
           4 PM
         </div>
-        <div class="col-8" ><textarea class="form-control">random text</textarea>
+        <div class="col-8" ><textarea class="form-control" id="4pmtext">Insert Plans</textarea>
         </div>
         <div class="col-2" >
-        <button type="button" class="btn btn-info 9am"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <button type="button" class="btn btn-info 4pm"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 6a1 1 0 0 1 2 0v1H7V6zm3 0v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
           </svg></button>
         </div>
@@ -132,10 +133,10 @@
         <div class="col-2">
           5 PM
         </div>
-        <div class="col-8" ><textarea class="form-control">random text</textarea>
+        <div class="col-8" ><textarea class="form-control" id="5pmtext">Insert Plans</textarea>
         </div>
         <div class="col-2" >
-        <button type="button" class="btn btn-info 9am"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <button type="button" class="btn btn-info 5pm"><svg width="5em" height="1em" viewBox="0 0 16 16" class="bi bi-file-lock2-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7 6a1 1 0 0 1 2 0v1H7V6zm3 0v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
           </svg></button>
         </div>
@@ -143,11 +144,83 @@
     
     </div>
 
-   <script>
-     document.getElementById("currentDay").innerHTML = moment();
-
-   </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js">
+    </script>
+    <script>  
+
+      function myFunction(){
+        document.getElementById("9amtext").value = localStorage.getItem("text9am");
+        document.getElementById("10amtext").value = localStorage.getItem("text10am");
+        document.getElementById("11amtext").value = localStorage.getItem("text11am");
+        document.getElementById("12pmtext").value = localStorage.getItem("text12pm");
+        document.getElementById("1pmtext").value = localStorage.getItem("text1pm");
+        document.getElementById("2pmtext").value = localStorage.getItem("text2pm");
+        document.getElementById("3pmtext").value = localStorage.getItem("text3pm");
+        document.getElementById("4pmtext").value = localStorage.getItem("text4pm");
+        document.getElementById("5pmtext").value = localStorage.getItem("text5pm");
+
+
+      }
+
+
+
+    $("#currentDay").html(moment(new Date()).format("dddd, MMMM Do"));
+    
+    $(".9am").on("click", function() {
+      alert("Saved!");
+      var plans = document.getElementById("9amtext");
+      localStorage.setItem("text9am", plans.value);
+      console.log(plans.value);})
+    
+      $(".10am").on("click", function() {
+      alert("Saved!");
+      var plans = document.getElementById("10amtext");
+      localStorage.setItem("text10am", plans.value);
+      console.log(plans.value);})
+     
+      $(".11am").on("click", function() {
+      alert("Saved!");
+      var plans = document.getElementById("11amtext");
+      localStorage.setItem("text11am", plans.value);
+      console.log(plans.value);})
+    
+      $(".12pm").on("click", function() {
+      alert("Saved!");
+      var plans = document.getElementById("12pmtext");
+      localStorage.setItem("text12pm", plans.value);
+      console.log(plans.value);})
+
+      $(".1pm").on("click", function() {
+      alert("Saved!");
+      var plans = document.getElementById("1pmtext");
+      localStorage.setItem("text1pm", plans.value);
+      console.log(plans.value);})
+
+      $(".2pm").on("click", function() {
+      alert("Saved!");
+      var plans = document.getElementById("2pmtext");
+      localStorage.setItem("text2pm", plans.value);
+      console.log(plans.value);})
+
+      $(".3pm").on("click", function() {
+      alert("Saved!");
+      var plans = document.getElementById("3pmtext");
+      localStorage.setItem("text3pm", plans.value);
+      console.log(plans.value);})
+
+      $(".4pm").on("click", function() {
+      alert("Saved!");
+      var plans = document.getElementById("4pmtext");
+      localStorage.setItem("text4pm", plans.value);
+      console.log(plans.value);})
+
+      $(".5pm").on("click", function() {
+      alert("Saved!");
+      var plans = document.getElementById("5pmtext");
+      localStorage.setItem("text5pm", plans.value);
+      console.log(plans.value);})
+
+    </script>
   </body>
 </html>
